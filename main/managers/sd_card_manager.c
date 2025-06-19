@@ -28,10 +28,10 @@ sd_card_manager_t sd_card_manager = { // Change this based on board config
     .d2pin = 22,
     .d3pin = 23,
 #ifdef CONFIG_USING_SPI
-    .spi_cs_pin = CONFIG_SD_SPI_CS_PIN,
-    .spi_clk_pin = CONFIG_SD_SPI_CLK_PIN,
-    .spi_miso_pin = CONFIG_SD_SPI_MISO_PIN,
-    .spi_mosi_pin = CONFIG_SD_SPI_MOSI_PIN
+    .spi_cs_pin = 44,
+    .spi_clk_pin = 7,
+    .spi_miso_pin = 8,
+    .spi_mosi_pin = 9
 #endif
 };
 
